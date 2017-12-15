@@ -19,8 +19,3 @@ else:
 url='http://hq.sinajs.cn/list='+code
 
 subprocess.call(['curl',url])
-
-
-######source code with shell
-#[ $code -gt 600000 ] && code=sh$code || code=sz$code
-#curl http://hq.sinajs.cn/list=$code
