@@ -1,0 +1,4 @@
+CREATE VIEW `VIEW_Model1` AS select `wy1`.`code` AS `code`,`wy1`.`dt` AS `dt`,(`wy1`.`ic` / `wy1`.`oc`) AS `IO_R`,(`wy1`.`cis` / `wy1`.`cos`) AS `IOC_R`,(((`wy1`.`H_pri` - `wy1`.`L_pri`) * 100) / `wy1`.`L_pri`) AS `F_ratio` from `wy1` where (((`wy1`.`ic` / `wy1`.`oc`) > 1.9) and ((`wy1`.`ic` / `wy1`.`oc`) < 3) and ((`wy1`.`cis` / `wy1`.`cos`) < 1.2) and ((((`wy1`.`H_pri` - `wy1`.`L_pri`) * 100) / `wy1`.`L_pri`) < 2))
+
+-- CREATE ALGORITHM=UNDEFINED DEFINER=``@`` SQL SECURITY DEFINER VIEW `VIEW_Model1` AS select `wy1`.`code` AS `code`,`wy1`.`dt` AS `dt`,(`wy1`.`ic` / `wy1`.`oc`) AS `IO_R`,(`wy1`.`cis` / `wy1`.`cos`) AS `IOC_R`,(((`wy1`.`H_pri` - `wy1`.`L_pri`) * 100) / `wy1`.`L_pri`) AS `F_ratio` from `wy1` where (((`wy1`.`ic` / `wy1`.`oc`) > 1.9) and ((`wy1`.`ic` / `wy1`.`oc`) < 3) and ((`wy1`.`cis` / `wy1`.`cos`) < 1.2) and ((((`wy1`.`H_pri` - `wy1`.`L_pri`) * 100) / `wy1`.`L_pri`) < 2))
+
