@@ -1,1 +1,1 @@
-create database IF NOT EXISTS hankdb default charset utf8;
+create database IF NOT EXISTS NGOBKO default charset utf8;
