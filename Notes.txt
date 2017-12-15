@@ -1,0 +1,16 @@
+1.create DB and Tab:
+	cd initsql
+	mysql < DB_CRDB.sql
+
+	cd tbdump/
+	mysql NGOBKO <hankdb_INIT.SQL 
+	mysql NGOBKO <codelist.dump.sql 
+
+2.init base tab :codelist:
+
+
+
+
+
+
+

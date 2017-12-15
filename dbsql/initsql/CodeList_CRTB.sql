@@ -1,4 +1,4 @@
-drop table codelist;
+drop table if exists codelist;
 
 create table codelist (
 code char(6) not null ,
